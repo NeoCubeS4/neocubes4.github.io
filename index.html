@@ -1,24 +1,116 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>NeoCube - BETA !!!</title>
+  <title>NeoCube</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
 
-<link rel="stylesheet" href="./style.css">
+
 
 
 </head>
-<body>
-  Le site est actuellement indisponible car il est en cours de développement, revenez plus tard.
-<!-- partial:index.partial.html -->
-<div class='loader'>
-  <div class='circle'></div>
-  <div class='circle'></div>
-  <div class='circle'></div>
-  <div class='circle'></div>
-  <div class='circle'></div>
+<body class="bg-white">
+  <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_100%_200px,#61d4b3,transparent)]"></div></div>
+  <header
+    class="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md bg-opacity-50 bg-white py-3 shadow drop-shadow-2xl backdrop-blur-lg md:top-6 lg:max-w-screen-xs">
+    <div class="px-4">
+        <div class="flex items-center justify-between">
+            <div class="flex shrink-0">
+                <a aria-current="page" class="flex items-center" href="/">
+                    <img class="h-7 w-auto" src="img/logo-nul-pasbo.svg" alt="">
+                    <p class="sr-only">NeoCube</p>
+                </a>
+            </div>
+            <div class="flex items-center justify-end gap-3">
+              <div class="md:flex md:items-center md:justify-center md:gap-5">
+                <a aria-current="page"
+                    class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
+                    href="#">TEXT</a>
+                <a class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
+                    href="#">Text</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</header>
+  
+  <!-- hero - start -->
+<div class="pb-6 sm:pb-8 lg:pb-12 mt-24">
+  <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+
+    <section class="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden bg-gray-100 py-16 shadow-lg md:py-20 xl:py-48 ">
+      
+      <!-- image - start -->
+      <img src="img/hero.jpg" loading="lazy" alt="Loading..." class="absolute inset-0 h-full w-full object-cover object-center"/>
+      
+      <!-- image - end -->
+
+      <!-- overlay - start -->
+      <div class="absolute inset-0 bg-neutral-700 mix-blend-multiply blur-2xl"></div>
+      <!-- overlay - end -->
+
+      <!-- text start -->
+      <div class="relative flex flex-col items-center p-4 sm:max-w-xl">
+        <p id="random-sentence" class="mb-4 text-center text-lg text-indigo-200 sm:text-xl md:mb-8"></p>
+
+        <script>
+          var sentences = [
+            "Le saviez-vous, l'ancien nom de NeoCube était ULTRACUBE ?",
+            "La première version d'UltraCube s'est déroulée en 2020 en 1.12.2 avec un modpack d'une cinquantaine de mods.",
+            "NeoCube était à la base un serveur privé réservé à la team Pepito.",
+            "NeoCube (anciennement ULTRACUBE) a été créé par @RedFlyHD en 2020."
+          ];
+
+          var randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
+          document.getElementById('random-sentence').textContent = randomSentence;
+        </script>
+        <h1 class="mb-8 text-center text-4xl font-bold text-white sm:text-5xl md:mb-12 md:text-6xl">
+            <span class="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-teal-400 via-emerald-500 to-green-600 text-transparent bg-clip-text ">L'aventure<br></span> commence bientôt
+        </h1>
+
+        <div class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
+          <a href="#">
+            <button class="group relative inline-flex h-12 items-center justify-center bg-neutral-950 bg-opacity-50 backdrop-blur-md px-6 font-medium text-neutral-200"><span>Voir les membres de la saison 4</span><div class="relative ml-1 h-5 w-5 overflow-hidden"><div class="absolute transition-all duration-200 group-hover:-translate-y-5 group-hover:translate-x-4"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"><path d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -translate-x-4"><path d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></div></div></button>
+          </a>
+
+        
+        </div>
+      </div>
+      <!-- text end -->
+    </section>
+  </div>
 </div>
-<!-- partial -->
+<!-- hero - end -->
+<!-- call to action - start -->
+<div class="py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+    <div class="flex flex-col overflow-hidden bg-black sm:flex-row md:h-80">
+      <!-- image - start -->
+      <div class="order-first h-48 w-full bg-gray-300 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
+        <img src="img/clouds.jpg" loading="lazy" alt="Photo by Andras Vas" class="h-full w-full object-cover object-center" />
+      </div>
+      <!-- image - end -->
+
+      <!-- content - start -->
+      <div class="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
+        <h2 class="mb-4 text-xl font-bold text-white md:text-2xl lg:text-4xl">Centre de Téléchargement</h2>
+
+        <p class="mb-8 max-w-md text-white-600">INDISPO !!!</p>
+
+        <div class="mt-auto">
+          <a>
+            <button class="group relative inline-flex h-[calc(48px+8px)] items-center justify-center bg-neutral-800 py-1 pl-6 pr-14 font-medium text-white"><span class="z-10 pr-2">Téléchargez le lanceur</span><div class="absolute right-1 inline-flex h-12 w-12 items-center justify-end  bg-neutral-700 transition-[width] group-hover:w-[calc(100%-8px)]"><div class="mr-3.5 flex items-center justify-center"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-neutral-50"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></div></div></button>
+          </a>
+        </div>
+      </div>
+      <!-- content - end -->
+    </div>
+  </div>
+</div>
+<!-- call to action - end -->
 
 </body>
 </html>
