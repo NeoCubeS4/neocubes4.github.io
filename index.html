@@ -6,181 +6,130 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
   <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
-
-
 
 
 </head>
 <body class="bg-white">
-  <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_800px_at_100%_200px,#61d4b3,transparent)]"></div></div>
-
-  
-  <!-- hero - start -->
-<div class="pb-6 pt-6 sm:pb-8 lg:pb-12 mt-10">
-  <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-
-    <section class="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden bg-gray-100 py-16 shadow-lg drop-shadow-2xl md:py-20 xl:py-48 ">
-
-      <!-- image - start -->
-
-      <video autoplay muted loop loading="lazy" alt="Loading..." class="absolute inset-0 h-full w-full object-cover object-center blur-sm">
-        <source src="img/hero video.mp4" type="video/mp4">
-      </video>
-      
-      <!-- image - end -->
-
-      <!-- overlay - start -->
-      <div class="absolute inset-0 bg-neutral-00 mix-blend-multiply "></div>
-      <!-- overlay - end -->
-
-      <!-- text start -->
-      <div class="relative flex flex-col items-center p-4 sm:max-w-xl">
-        <p id="random-sentence" class="mb-4 text-center text-lg text-neutral-200 sm:text-xl md:mb-8"></p>
-
-        <script>
-          var sentences = [
-            "Le saviez-vous, l'ancien nom de NeoCube était ULTRACUBE ?",
-            "La première version d'UltraCube s'est déroulée en 2020 en 1.12.2 avec un modpack d'une cinquantaine de mods.",
-            "NeoCube était à la base un serveur privé réservé à la team Pepito.",
-            "NeoCube (anciennement ULTRACUBE) a été créé par @RedFlyHD en 2020."
-          ];
-
-          var randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
-          document.getElementById('random-sentence').textContent = randomSentence;
-        </script>
-        <h1 class="mb-8 text-center text-4xl font-bold text-white sm:text-5xl md:mb-12 md:text-6xl">
-            <span class="bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-teal-400 via-emerald-500 to-green-600 text-transparent bg-clip-text ">L'aventure<br></span> commence bientôt
-        </h1>
-
-        <div class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
-          <a href="#">
-            <button class="group relative inline-flex h-12 items-center justify-center bg-neutral-950 bg-opacity-50 backdrop-blur-md px-6 font-medium text-neutral-200"><span>Voir les membres de la saison 4</span><div class="relative ml-1 h-5 w-5 overflow-hidden"><div class="absolute transition-all duration-200 group-hover:-translate-y-5 group-hover:translate-x-4"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"><path d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -translate-x-4"><path d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></div></div></button>
-          </a>
-
-        
-        </div>
-      </div>
-      <!-- text end -->
-    </section>
-  </div>
-</div>
-<!-- hero - end -->
-<!-- call to action - start -->
-<div class="py-6 sm:py-8 lg:py-12">
-  <div class="mx-auto max-w-screen-2xl px-4 md:px-8 drop-shadow-2xl">
-    <div class="flex flex-col overflow-hidden bg-black sm:flex-row md:h-80">
-      <!-- image - start -->
-      <div class="order-first h-48 w-full bg-gray-300 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
-        <img src="img/clouds.jpg" loading="lazy" alt="loading..." class="h-full w-full object-cover object-center" />
-      </div>
-      <!-- image - end -->
-
-      <!-- content - start -->
-      <div class="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
-        <h2 class="mb-4 text-xl font-bold text-white md:text-2xl lg:text-4xl">Centre de Téléchargement</h2>
-
-        <p class="mb-8 max-w-md text-white text-opacity-50">Lors de la dernière saison, de nombreux participants ont eu des problèmes pour installer le modpack. Nous avons donc créé un launcher pour simplifier et automatiser complètement l'installation, afin d'améliorer votre expérience</p>
-
-        <div class="mt-auto">
-          <a>
-            <button id="openModal" class="group relative inline-flex h-12 items-center justify-center overflow-hidden bg-white px-6 font-medium text-black duration-500"><div class="translate-y-0 opacity-100 transition group-hover:-translate-y-[150%] group-hover:opacity-0 uppercase">Ouvrir</div><div class="absolute translate-y-[150%] opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"><path d="M7.5 2C7.77614 2 8 2.22386 8 2.5L8 11.2929L11.1464 8.14645C11.3417 7.95118 11.6583 7.95118 11.8536 8.14645C12.0488 8.34171 12.0488 8.65829 11.8536 8.85355L7.85355 12.8536C7.75979 12.9473 7.63261 13 7.5 13C7.36739 13 7.24021 12.9473 7.14645 12.8536L3.14645 8.85355C2.95118 8.65829 2.95118 8.34171 3.14645 8.14645C3.34171 7.95118 3.65829 7.95118 3.85355 8.14645L7 11.2929L7 2.5C7 2.22386 7.22386 2 7.5 2Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></div></button>
-          </a>
-        </div>
-      </div>
-      <!-- content - end -->
+  <div class="relative h-screen">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0">
+      <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
     </div>
-  </div>
-</div>
-<!-- call to action - end -->
-</section>
 
-<!-- Modal -->
-<div id="contactmod" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-5 backdrop-filter backdrop-blur-md flex z-50">
-  <div class="bg-white p-8 shadow-lg max-w-screen-xl w-full z-50">
+    <!-- Hero Content -->
+    <div class="relative z-10 flex h-full flex-col items-center justify-center px-4">
+      <div class="relative isolate px-6 pt-14 lg:px-8">
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
 
-<!-- call to action - start -->
-<div class="py-6 sm:py-8 lg:py-12">
-  <div class="mx-auto max-w-screen-2xl px-4 md:px-8 drop-shadow-2xl">
-    <div class="flex flex-col overflow-hidden bg-black sm:flex-row md:h-80">
-      <!-- image - start -->
-      <div class="order-first h-48 w-full bg-gray-300 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">
-        <img src="img/launcher on windows.png" loading="lazy" alt="loading..." class="h-full w-full object-cover object-center" />
-      </div>
-      <!-- image - end -->
-
-      <!-- content - start -->
-      <div class="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
-        <h2 class="mb-4 text-xl font-bold text-white md:text-2xl lg:text-4xl">Télécharger le launcher Windows</h2>
-
-        <p class="mb-8 max-w-md text-white text-opacity-50">Nous avons consacré des efforts considérables pour vous offrir la meilleure expérience possible sur notre serveur. C'est pourquoi nous avons optimisé le processus de connexion pour le rendre aussi intuitif et rapide que possible.</p>
-
-        <div class="mt-auto">
-          <a href="https://github.com/NeoCubeS4/NeoLauncher/releases/download/1.0.8/NeoLauncher-setup-1.0.8.exe">
-            <button  class="group relative inline-flex h-12 items-center justify-center overflow-hidden bg-white px-6 font-medium text-black duration-500"><div class="translate-y-0 opacity-100 transition group-hover:-translate-y-[150%] group-hover:opacity-0 uppercase">Télécharger</div><div class="absolute translate-y-[150%] opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"><path d="M7.5 2C7.77614 2 8 2.22386 8 2.5L8 11.2929L11.1464 8.14645C11.3417 7.95118 11.6583 7.95118 11.8536 8.14645C12.0488 8.34171 12.0488 8.65829 11.8536 8.85355L7.85355 12.8536C7.75979 12.9473 7.63261 13 7.5 13C7.36739 13 7.24021 12.9473 7.14645 12.8536L3.14645 8.85355C2.95118 8.65829 2.95118 8.34171 3.14645 8.14645C3.34171 7.95118 3.65829 7.95118 3.85355 8.14645L7 11.2929L7 2.5C7 2.22386 7.22386 2 7.5 2Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></div></button>
-          </a>
         </div>
-      </div>
-      <!-- content - end -->
-    </div>
-  </div>
-</div>
-<!-- call to action - end -->
+        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div class="hidden sm:mb-8 sm:flex sm:justify-center">
 
-
-        <button id="closeModal" class="group relative inline-flex h-12 items-center justify-center overflow-hidden bg-neutral-950 px-6 font-medium text-neutral-200"><span>Fermer</span><div class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]"><div class="relative h-full w-8 bg-white/20"></div></div></button>
-  </div>
-</div>
-
-<script>
-  document.getElementById('openModal').addEventListener('click', function() {
-  document.getElementById('contactmod').classList.remove('hidden');
-  });
-
-  document.getElementById('closeModal').addEventListener('click', function() {
-  document.getElementById('contactmod').classList.add('hidden');
-  });
-</script>
-
-
-
-<section>
-
-  <section>
-    <div class="py-6 sm:py-8 lg:py-12">
-      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <!-- text - start -->
-        <div class="mb-10 md:mb-16">
-          <h2 class="mb-4 text-left text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">L'Actu</h2>
-    
-          <p class=" text-left text-gray-500 md:text-lg">Découvrez l’actualité de NeoCube presque en temps réel : entreprises, mises à jour, actualités des membres, etc.</p>
-        </div>
-        <!-- text - end -->
-    
-        <div class="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8">
-          <!-- article - start -->
-          <div class="flex flex-col overflow-hidden bg-black">
-            <a href="#" class="group relative block h-48 overflow-hidden bg-gray-100 md:h-64">
-              <img src="img link" loading="lazy" alt="Loading..." class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-            </a>
-    
-            <div class="flex flex-1 flex-col p-4 sm:p-6">
-              <h2 class="mb-2 text-lg font-semibold text-white">
-                <a href="#" class="transition duration-100 ">Lorem title</a>
-              </h2>
-    
-              <p class="mb-8 text-neutral-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad culpa nam molestias expedita nisi nemo laboriosam, maiores aliquid voluptatum consectetur deserunt consequuntur esse odio vitae eligendi. Unde, similique! Perspiciatis, eveniet.</p>
-
-              <div class="mt-auto flex items-end justify-between">
-                <button class="group relative inline-flex h-12 w-12 items-center justify-center overflow-hidden  bg-white font-medium text-black transition-all duration-300 hover:w-32"><div class="inline-flex whitespace-nowrap opacity-0 transition-all duration-200 group-hover:-translate-x-3 group-hover:opacity-100">Ouvrir</div><div class="absolute right-3.5"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></div></button>
-              </div>
-            </div>
           </div>
-          <!-- article - end -->
+          <div class="text-center">
+            <h1 class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
+              <span class="bg-gradient-to-t from-green-600 to-green-300 bg-clip-text text-transparent">L'aventure</span>
 
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="-370 0 2000 73" fill="#00D66A"><path d="M1212.41 5.51c3.05 12.87-22.36 11.93-30.26 15.68-94.32 20.51-269.09 32.42-365.48 37.51-77.91 3.82-155.66 9.93-233.67 11.67-57.49 2.56-115.05-.19-172.57 1.58-121.28.91-243.17 1.88-363.69-13.33-12.51-2.64-25.8-2.92-37.77-7.45-30.66-21.42 26.02-21.53 38.52-19.26 359.95 29.05 364.68 27.36 638.24 17.85 121-3.78 241.22-19.21 426.76-41.46 4.72-.65 9.18 3.56 8.45 8.36a941.74 941.74 0 0 0 54.29-9.21c9.33-2.33 18.7-4.56 27.95-7.19a7.59 7.59 0 0 1 9.23 5.24Z"></path></svg>
+
+              <span class="bg-gradient-to-t from-black to-green-800 bg-clip-text text-transparent">commence bientôt</span>
+            </h1>
+            <br>
+            <br>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <button class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-neutral-200 bg-white px-6 font-medium text-neutral-600 transition-all [box-shadow:0px_4px_1px_#a3a3a3] active:translate-y-[2px] active:shadow-none">Voir les membres de la saison 4</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  
+    <div class="py-24 sm:py-32">
+      <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+        <h2 class="text-center text-base/7  text-green-600">Cliquez sur l'option de votre choix.</h2>
+        <p class="mx-auto mt-2 max-w-2xl text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">Tout ce dont vous avez besoin pour <span class="bg-gradient-to-t from-green-600 to-green-300 bg-clip-text text-transparent">nous rejoindre.</span></p>
+        <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+          <div class="relative lg:row-span-2">
+            <div class="absolute inset-px rounded-lg bg-white scale:100 "></div>
+            <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)] ">
+              <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10 ">
+                <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Installation Windows</p>
+                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Compatible avec Windows 10/11 version x64 (non optimisé pour les puces ARM)</p>
+              </div>
+              <div class="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+                <div class="absolute bottom-0 top-10 overflow-hidden">
+                  <img class="size-full object-cover object-top" src="img/Windows.svg" alt="">
+                </div>
+              </div>
+              <a>
+
+              </a>
+              <button  class=" mb-7 ml-7 mr-7 group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-black px-6 font-medium text-white transition-all [box-shadow:0px_4px_8px_#a3a3a3] active:translate-y-[4px] active:shadow-none"><a href="https://github.com/NeoCubeS4/NeoLauncher/releases/download/1.0.9/NeoLauncher-setup-1.0.9.exe">Télécharger pour Windows</a></button>
+            </div>
+            <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 "></div>
+          </div>
+
+
+          <div class="relative max-lg:row-start-1 ">
+            <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem] "></div>
+            <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+              <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Installation Manuelle</p>
+                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Si vous rencontrez des difficultés avec le Launcher ou que vous souhaitez simplement installer le ModPack manuellement, veuillez suivre ce tutoriel<br>(ce choix n'est pas recommandé pour les utilisateurs peu expérimentés)</p>
+              </div>
+              <div class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
+              </div>
+              <button class=" mb-7 ml-7 mr-7 group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-black px-6 font-medium text-white transition-all [box-shadow:0px_4px_8px_#a3a3a3] active:translate-y-[4px] active:shadow-none">(en construction)</button>
+            </div>
+            <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
+          </div>
+
+          <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
+            <div class="absolute inset-px rounded-lg bg-white"></div>
+            <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
+              <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Installation Linux</p>
+                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi.</p>
+              </div>
+              <div class="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
+                <img class="h-[min(152px,40cqw)] object-cover" src="img/Linux.svg" alt="">
+              </div>
+              <button class=" mb-7 ml-7 mr-7 group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-black px-6 font-medium text-white transition-all [box-shadow:0px_4px_8px_#a3a3a3] active:translate-y-[4px] active:shadow-none">(en construction)</button>
+            </div>
+            <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
+          </div>
+
+          <div class="relative lg:row-span-2">
+            <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+            <div class="relative flex h-full flex-col overflow-hidden rounded-lg">
+              <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
+                <p class="mt-2 text-lg font-medium tracking-tight text-black- max-lg:text-center">Installation macOS</p>
+                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Compatible uniquement avec les Mac équipés de puces Apple Silicon (M1,M2,M3,M4, etc..)</p>
+              </div>
+              <div class="relative min-h-[30rem] w-full grow">
+                <div class="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
+                  <div class="absolute  bottom-0 top-10 overflow-hidden">
+                    <img class="size-full object-cover object-top" src="img/MacOS.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <button class=" mb-7 ml-7 mr-7 group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-black px-6 font-medium text-white transition-all [box-shadow:0px_4px_8px_#a3a3a3] active:translate-y-[4px] active:shadow-none"><a href="https://github.com/NeoCubeS4/NeoLauncher/releases/download/1.0.9/NeoLauncher-setup-1.0.9-arm64.dmg">Télécharger pour Macintosh</a></button>
+            </div>
+            <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 "></div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+    </div>
+  </div>
+  <div class="bg-white">
+
+
+
 </body>
 </html>
