@@ -6,6 +6,17 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Ajouter une règle pour forcer le chargement de la police */
+@font-face {
+    font-family: 'FFFLauta-Fallback';
+    src: local('Arial');
+    size-adjust: 105%;
+    ascent-override: 90%;
+    descent-override: 20%;
+    line-gap-override: 10%;
 }
 
 :root {
@@ -36,6 +47,7 @@
     --bg-white: #f5f5f5;
     --text-dark: #181818;
     --grid-color-light: rgba(0, 0, 0, 0.05);
+    --main-font: 'FFFLauta', 'FFFLauta-Fallback', Arial, sans-serif;
 }
 
 * {
@@ -217,7 +229,7 @@
 }
 
 body {
-    font-family: 'FFFLauta', 'Arial', 'Helvetica', sans-serif;
+    font-family: var(--main-font);
     background: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
@@ -865,7 +877,7 @@ html {
 .section-orange .card-glow { background-color: var(--accent-orange); }
 
 h1, h2, h3 {
-    font-family: 'FFFLauta', 'Arial', 'Helvetica', sans-serif;
+    font-family: var(--main-font);
     font-weight: 700;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -3478,7 +3490,6 @@ h1, h2, h3, h4, h5, h6 {
     100% { transform: translate(-50%, -50%) scale(1) rotate(180deg); }
 }
 
-/* Curseur de base avec effet fluffy */
 .custom-cursor {
     position: fixed;
     width: 25px;
@@ -3502,7 +3513,6 @@ h1, h2, h3, h4, h5, h6 {
     contain: layout paint style;
 }
 
-/* Élément qui crée l'effet fluffy autour du curseur */
 .custom-cursor::before {
     content: '';
     position: absolute;
@@ -3519,7 +3529,6 @@ h1, h2, h3, h4, h5, h6 {
     pointer-events: none;
 }
 
-/* Amélioration de l'effet hover */
 .custom-cursor.hover-card {
     width: 45px;
     height: 45px;
@@ -3542,7 +3551,6 @@ h1, h2, h3, h4, h5, h6 {
     mix-blend-mode: screen;
 }
 
-/* États actifs pour les clics */
 .custom-cursor.clicking {
     animation: clickSpin 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     width: 22px;
@@ -3551,7 +3559,6 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Effet d'onde au clic */
 .cursor-click-effect {
     position: fixed;
     width: 40px;
@@ -3564,7 +3571,6 @@ h1, h2, h3, h4, h5, h6 {
     animation: cursorClickWave 0.6s cubic-bezier(0.11, 0, 0.5, 0) forwards;
 }
 
-/* Curseur avec couleurs par section - version améliorée */
 .section-blue .custom-cursor.hover-card,
 .section-blue .custom-cursor.hover-button,
 .section-blue .custom-cursor.clicking {
@@ -3595,14 +3601,12 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgba(255, 119, 0, 0.6);
 }
 
-/* Amélioration de l'effet d'onde pour les sections colorées */
 .section-blue .cursor-click-effect { border-color: rgba(0, 162, 255, 0.6); }
 .section-purple .cursor-click-effect { border-color: rgba(191, 0, 255, 0.6); }
 .section-green .cursor-click-effect { border-color: rgba(9, 255, 0, 0.6); }
 .section-red .cursor-click-effect { border-color: rgba(255, 0, 85, 0.6); }
 .section-orange .cursor-click-effect { border-color: rgba(255, 119, 0, 0.6); }
 
-/* Effet de traînée pour un rendu plus fluide */
 .cursor-trail {
     position: fixed;
     width: 6px;
