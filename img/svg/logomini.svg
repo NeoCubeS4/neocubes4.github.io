@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1627.06" height="1628.057" viewBox="0 0 1627.06 1628.057">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="493" y="328" width="1408.776" height="1627.057" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6747a1"/>
+      <stop offset="1" stop-color="#342451"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.335" y2="0.994" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a378fa"/>
+      <stop offset="1" stop-color="#523c7d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5b3e90"/>
+      <stop offset="1" stop-color="#2e1f48"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a77bff"/>
+      <stop offset="1" stop-color="#100021"/>
+    </linearGradient>
+    <filter id="Path_3_-_Outline" x="771.831" y="530.213" width="505.103" height="811.956" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_4_-_Outline" x="353.225" y="165.937" width="923.529" height="811.588" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="14" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-6" x1="0.665" y1="-0.001" x2="0.331" y2="0.998" xlink:href="#linear-gradient-4"/>
+    <filter id="Path_7_-_Outline" x="142.223" y="529.362" width="924.61" height="812.971" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="14" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Logo_main_task_full" data-name="Logo main task full" transform="translate(-522.933 -523.261)">
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="1627.06" height="1627.057" transform="translate(522.933 523.261)" fill="rgba(249,233,255,0)"/>
+    <g id="Scroll_Group_1" data-name="Scroll Group 1" transform="translate(140.101 196.262)" clip-path="url(#clip-path)" style="isolation: isolate">
+      <g id="Logo" transform="translate(139.899 123.952)">
+        <path id="Polygon_1" data-name="Polygon 1" d="M1219.837,0l406.612,704.326-406.612,704.326H406.612L0,704.326,406.612,0Z" transform="translate(704.38 0) rotate(30)" fill="none"/>
+        <path id="Path_3" data-name="Path 3" d="M813.224,0l405.227,703.952h-812.3L0,.375Z" transform="translate(1760.313 610.843) rotate(90)" fill="url(#linear-gradient)"/>
+        <path id="Path_4" data-name="Path 4" d="M813.428,0l405.329,703.595h-812.5L0,.375Z" transform="translate(1760.313 611.234) rotate(150)" fill="url(#linear-gradient-2)"/>
+        <path id="Path_6" data-name="Path 6" d="M812.938,0l405.085,703.757H406.008L0,.375Z" transform="translate(353.449 610.812) rotate(30)" fill="url(#linear-gradient-3)"/>
+        <path id="Path_1" data-name="Path 1" d="M483.912,0,725.044,415.4H241.681L0,.221Z" transform="translate(1058.36 1499.921) rotate(-150)" fill="#f9e9ff"/>
+        <path id="Path_3-2" data-name="Path 3" d="M483.594,0,724.567,420.712H241.522L0,.224Z" transform="translate(1055.563 1500.315) rotate(-90)" fill="#f9e9ff"/>
+        <path id="Path_4-2" data-name="Path 4" d="M483.631,0,724.623,420.137H241.541L0,.224Z" transform="translate(638.665 774.266) rotate(-30)" fill="#f9e9ff"/>
+        <g id="Group_1" data-name="Group 1" transform="translate(427.156 410.985)">
+          <g transform="matrix(1, 0, 0, 1, -184.22, -207.94)" filter="url(#Path_3_-_Outline)">
+            <path id="Path_3_-_Outline-2" data-name="Path 3 - Outline" d="M453.412,56.218l-356.225.164L275.059,364.9H630.879L453.412,56.218M485.855,0l242.1,421.1h-485.3L0,.224Z" transform="translate(1234.93 572.21) rotate(90)" fill="url(#linear-gradient-4)"/>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, -184.22, -207.94)" filter="url(#Path_4_-_Outline)">
+            <path id="Path_4_-_Outline-2" data-name="Path 4 - Outline" d="M452.517,56.163,97,56.327,274.516,364.542H629.634L452.517,56.163M484.9,0,726.519,420.69H242.173L0,.224Z" transform="translate(395.23 571.2) rotate(-30)" fill="url(#linear-gradient-4)"/>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, -184.22, -207.94)" filter="url(#Path_7_-_Outline)">
+            <path id="Path_7_-_Outline-2" data-name="Path 7 - Outline" d="M452.822,56.338,97.06,56.5,274.7,365.681H630.058L452.822,56.338M485.223,0,727.008,422H242.336L0,.225Z" transform="translate(813.83 1300.33) rotate(-150)" fill="url(#linear-gradient-6)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

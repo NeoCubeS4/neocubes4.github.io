@@ -1,28 +1,457 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>NeoCube</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoCube BETA !!!!</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/simple-animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./js/main.js" defer></script>
+    <script src="./js/simple-scroll-animations.js" defer></script>
+    <script src="js/parallax-cards.js" defer></script>
+    <script src="./js/scroll-animations.js" defer></script>
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+    <div class="custom-cursor"></div>
+    
+    <div id="loading-screen">
+        <div class="loading-container">
+            <div class="loading-cube">
+                <div class="cube-face cube-front">
+                    <div class="cube-pixel" style="top: 20px; left: 30px"></div>
+                    <div class="cube-pixel" style="top: 40px; left: 50px"></div>
+                    <div class="cube-pixel" style="top: 10px; left: 60px"></div>
+                </div>
+                <div class="cube-face cube-back">
+                    <div class="cube-pixel" style="top: 30px; left: 20px"></div>
+                    <div class="cube-pixel" style="top: 50px; left: 40px"></div>
+                    <div class="cube-pixel" style="top: 15px; left: 10px"></div>
+                </div>
+                <div class="cube-face cube-right">
+                    <div class="cube-pixel" style="top: 10px; left: 10px"></div>
+                    <div class="cube-pixel" style="top: 30px; left: 50px"></div>
+                    <div class="cube-pixel" style="top: 60px; left: 30px"></div>
+                </div>
+                <div class="cube-face cube-left">
+                    <div class="cube-pixel" style="top: 40px; left: 10px"></div>
+                    <div class="cube-pixel" style="top: 20px; left: 40px"></div>
+                    <div class="cube-pixel" style="top: 50px; left: 60px"></div>
+                </div>
+                <div class="cube-face cube-top">
+                    <div class="cube-pixel" style="top: 20px; left: 20px"></div>
+                    <div class="cube-pixel" style="top: 40px; left: 40px"></div>
+                    <div class="cube-pixel" style="top: 20px; left: 60px"></div>
+                </div>
+                <div class="cube-face cube-bottom">
+                    <div class="cube-pixel" style="top: 30px; left: 10px"></div>
+                    <div class="cube-pixel" style="top: 10px; left: 30px"></div>
+                    <div class="cube-pixel" style="top: 50px; left: 50px"></div>
+                </div>
+            </div>
+            <div class="loading-text">Chargement de NeoCube...</div>
 
-<div class="container">
-   <div class="box">
-    <div class="animation">
-     <div class="one spin-one"></div>
-     <div class="two spin-two"></div>
-     <div class="three spin-one"></div>
+        </div>
     </div>
-  <h1>Maintenance</h1>
-  <p>NeoCube est en maintenance pour une grosse mise à jour du serveur.<br>Le site devrait revenir d'ici 24h.</p>
-  
-  </div>
-</div>
-<!-- partial -->
-  
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/images/LogoWith Size.png" alt="NeoCube Logo">
+            </div>
+            <ul class="nav-links">
+                <div class="nav-items-group">
+                    <li class="nav-item-small"><a href="#howItWorks">Comment ça fonctionne</a></li>
+                    <li class="nav-item-small"><a href="#communaute">Communauté</a></li>
+                </div>
+                <div class="nav-download">
+                    <li class="download-btn-small"><a href="#download"><i class="fas fa-download"></i> Télécharger</a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="grid-bg"></div>
+        <div class="light-effect green-light"></div>
+        <div class="light-effect small-light green-light small-light-4"></div>
+        <div class="light-effect tiny-light green-light tiny-light-1"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>NeoCube</h1>
+                    <h4>Site en développement</h4>
+                    <p>La page que vous consultez est toujours en développement. Certaines informations peuvent ne pas correspondre.</p>
+                    <a href="#download" class="download-btn shine-effect"><i class="fas fa-download"></i> Télécharger</a>
+                </div>
+                <div class="hero-video-container">
+                    <video class="hero-video" autoplay loop muted playsinline>
+                        <source src="./assets/images/tempimagefromessential.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="fonctionnalites" class="features section-blue animate-section">
+        <div class="grid-bg"></div>
+        <div class="light-effect blue-light"></div>
+        <div class="light-effect small-light blue-light small-light-1"></div>
+        <div class="light-effect small-light blue-light small-light-2"></div>
+        <div class="light-effect small-light blue-light small-light-4"></div>
+        <div class="light-effect small-light blue-light small-light-5"></div>
+        <div class="light-effect tiny-light blue-light tiny-light-2"></div>
+        <div class="container">
+            <h2>Fonctionnalités</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="card-glow"></div>
+                    <i class="fas fa-tools pixel-icon"></i>
+                    <div class="feature-content">
+                        <h3>Craft avancé</h3>
+                        <p class="overflow-text">Découvrez plus de 150 nouveaux crafts qui changent complètement votre façon de jouer et construire dans Minecraft.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="card-glow"></div>
+                    <i class="fas fa-sword pixel-icon"></i>
+                    <div class="feature-content">
+                        <h3>Combat Décimation</h3>
+                        <p class="overflow-text">Affrontez des zombies et d'autres joueurs dans un système de combat entièrement repensé inspiré du mode Decimation.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="card-glow"></div>
+                    <i class="fas fa-flag pixel-icon"></i>
+                    <div class="feature-content">
+                        <h3>Système de Nations</h3>
+                        <p class="overflow-text">Créez votre nation, établissez des alliances et menez des guerres territoriales comme dans NationGlory avec une touche d'innovation.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="card-glow"></div>
+                    <i class="fas fa-cube pixel-icon"></i>
+                    <div class="feature-content">
+                        <h3>Mods Exclusifs</h3>
+                        <p class="overflow-text">Notre launcher intègre automatiquement plus de 45 mods spécialement configurés pour une expérience de jeu optimale et unique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="howItWorks" class="how-it-works section-green animate-section">
+        <div class="grid-bg"></div>
+        <div class="light-effect green-light"></div>
+        <div class="light-effect small-light green-light small-light-1"></div>
+        <div class="light-effect small-light green-light small-light-2"></div>
+        <div class="light-effect small-light green-light small-light-3"></div>
+        <div class="light-effect tiny-light green-light tiny-light-1"></div>
+        <div class="light-effect small-light green-light small-light-4"></div>
+        <div class="container">
+            <h2>Comment<br>ça fonctionne ?</h2>
+            <div class="how-content">
+                <div class="steps-container">
+                    <div class="how-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Téléchargez le launcher</h3>
+                            <p>Vous devez posséder un compte Minecraft Premium Java pour accéder au serveur NeoCube.</p>
+                        </div>
+                    </div>
+                    <div class="how-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Installez et connectez-vous</h3>
+                            <p>Installez le launcher sur votre ordinateur et connectez-vous avec vos identifiants Minecraft pour rejoindre le serveur.</p>
+                        </div>
+                    </div>
+                    <div class="how-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Lancez et jouez</h3>
+                            <p>Cliquez simplement sur le bouton "Jouer" et le jeu se lancera automatiquement avec tous les mods nécessaires.</p>
+                        </div>
+                    </div>
+                    <div class="steps-download">
+                        <a href="#download" class="download-btn"><i class="fas fa-download"></i> Télécharger le Launcher</a>
+                    </div>
+                </div>
+                <div class="launcher-preview">
+                    <img src="./assets/images/launcher/launcher-preview1.png" alt="NeoCube Launcher">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="communaute" class="social section-light-theme animate-section">
+        <div class="grid-bg"></div>
+        <div class="light-effect white-light"></div>
+        <div class="light-effect small-light white-light small-light-1"></div>
+        <div class="light-effect small-light white-light small-light-3"></div>
+        <div class="light-effect small-light white-light small-light-4"></div>
+        <div class="light-effect tiny-light white-light tiny-light-1"></div>
+        <div class="container">
+            <h2>Rejoignez notre communauté</h2>
+            <div class="social-links">
+                <a href="#" class="social-card shine-effect">
+                    <div class="card-glow"></div>
+                    <i class="fab fa-discord pixel-icon"></i>
+                    <span>Discord</span>
+                    <p class="social-desc">Rejoignez notre serveur Discord pour discuter avec les joueurs et l'équipe de développement.</p>
+                </a>
+                <a href="#" class="social-card shine-effect">
+                    <div class="card-glow"></div>
+                    <i class="fab fa-twitter pixel-icon"></i>
+                    <span>Twitter</span>
+                    <p class="social-desc">Suivez-nous pour les dernières annonces et mises à jour du serveur NeoCube.</p>
+                </a>
+                <a href="#" class="social-card shine-effect">
+                    <div class="card-glow"></div>
+                    <i class="fab fa-youtube pixel-icon"></i>
+                    <span>YouTube</span>
+                    <p class="social-desc">Regardez nos vidéos de gameplay et les tutoriels pour les nouveaux joueurs.</p>
+                </a>
+                <a href="#" class="social-card shine-effect">
+                    <div class="card-glow"></div>
+                    <i class="fab fa-reddit pixel-icon"></i>
+                    <span>Reddit</span>
+                    <p class="social-desc">Partagez vos créations et participez aux discussions de la communauté.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog section-green animate-section">
+        <div class="grid-bg"></div>
+        <div class="light-effect green-light"></div>
+        <div class="light-effect small-light green-light small-light-2"></div>
+        <div class="light-effect small-light green-light small-light-3"></div>
+        <div class="light-effect tiny-light green-light tiny-light-1"></div>
+        <div class="light-effect small-light green-light small-light-4"></div>
+        <div class="container">
+            <h2>Développement et Mises à Jour</h2>
+            <div class="blog-posts">
+                <div class="blog-post">
+                    <div class="card-glow"></div>
+                    <div class="post-date">5 Janvier 2025</div>
+                    <h3>Lancement Early Access confirmé</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis nec magna interdum convallis. Phasellus viverra metus eget magna porttitor.</p>
+                    <a href="#" class="read-more">Lire plus</a>
+                </div>
+                <div class="blog-post">
+                    <div class="card-glow"></div>
+                    <div class="post-date">28 Décembre 2024</div>
+                    <h3>Nouveaux mods intégrés</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu risus id nisi faucibus scelerisque. Donec efficitur sapien vel ligula semper.</p>
+                    <a href="#" class="read-more">Lire plus</a>
+                </div>
+                <div class="blog-post">
+                    <div class="card-glow"></div>
+                    <div class="post-date">10 Décembre 2024</div>
+                    <h3>Système de Nations dévoilé</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices egestas turpis, in tempus nunc ultricies vitae. Cras facilisis.</p>
+                    <a href="#" class="read-more">Lire plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq section-red animate-section">
+        <div class="grid-bg"></div>
+        <div class="light-effect red-light"></div>
+        <div class="light-effect small-light red-light small-light-1"></div>
+        <div class="light-effect small-light red-light small-light-3"></div>
+        <div class="light-effect small-light red-light small-light-4"></div>
+        <div class="light-effect tiny-light red-light tiny-light-2"></div>
+        <div class="container">
+            <h2>Questions Fréquentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="card-glow"></div>
+                    <h3>Comment jouer sur NeoCube ?</h3>
+                    <p>Téléchargez notre launcher personnalisé, créez un compte et laissez-le installer automatiquement tous les mods nécessaires.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="card-glow"></div>
+                    <h3>Quelle est la configuration minimale requise ?</h3>
+                    <p>Nous recommandons 8GB de RAM, un processeur i5 ou équivalent, et au moins 5GB d'espace disque pour une expérience optimale.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="card-glow"></div>
+                    <h3>Quelle version de Minecraft est supportée ?</h3>
+                    <p>NeoCube fonctionne sur Minecraft 1.20.1 avec notre sélection personnalisée de mods préinstallés via notre launcher.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="card-glow"></div>
+                    <h3>Quand sera la sortie officielle ?</h3>
+                    <p>L'Early Access débutera en Juin 2025. Une date de sortie complète sera annoncée après la période de test et d'équilibrage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download section-green animate-section">
+        <div class="grid-bg"></div>
+        <div class="light-effect green-light"></div>
+        <div class="light-effect small-light green-light small-light-2"></div>
+        <div class="light-effect small-light green-light small-light-1"></div>
+        <div class="light-effect tiny-light green-light tiny-light-2"></div>
+        <div class="light-effect small-light green-light small-light-5"></div>
+        <div class="container">
+            <h2>Télécharger NeoCube</h2>
+            <p>Rejoignez l'aventure dès l'Early Access et aidez-nous à façonner l'avenir de NeoCube</p>
+            <div class="download-options">
+                <a href="#" class="download-btn"><i class="fas fa-download"></i>Installer le lanceur sur votre ordinateur</a>
+                <a href="#" class="version-link">Consulter la roadmap</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer section-light-theme">
+        <div class="grid-bg"></div>
+        <div class="light-effect white-light"></div>
+        <div class="light-effect small-light white-light small-light-1"></div>
+        <div class="light-effect small-light white-light small-light-3"></div>
+        <div class="light-effect tiny-light white-light tiny-light-1"></div>
+        <div class="light-effect small-light white-light small-light-5"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./assets/images/logoblack.png" alt="NeoCube Logo">
+                    <p>© 2025 NeoCube. Tous droits réservés.</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+                        <li><a href="#communaute">Communauté</a></li>
+                        <li><a href="#blog">Développement</a></li>
+                        <li><a href="#faq">FAQ</li>
+                        <li><a href="#download">Télécharger</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>NeoCube - Serveur Minecraft combinant Decimation et NationGlory - Version 1.20.1</p>
+                <p>Early Access prévu pour Juin 2025</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="download-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Télécharger NeoCube</h2>
+            <p>Choisissez la version correspondant à votre système d'exploitation</p>
+            <div class="download-options-grid">
+                <a href="#" class="download-option">
+                    <i class="fab fa-windows"></i>
+                    <span>Windows</span>
+                    <small>Windows 10/11 - 64 bits</small>
+                </a>
+                <a href="#" class="download-option">
+                    <i class="fab fa-apple"></i>
+                    <span>Mac (Apple Silicon)</span>
+                    <small>macOS 11+ ARM</small>
+                </a>
+                <a href="#" class="download-option">
+                    <i class="fab fa-apple"></i>
+                    <span>Mac (Intel)</span>
+                    <small>macOS 10.15+ x64</small>
+                </a>
+            </div>
+            <div class="modal-footer">
+                <p class="modal-note">En téléchargeant, vous acceptez les <a href="#">Conditions d'utilisation</a> et la <a href="#">Politique de confidentialité</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.feature-card, .social-card, .blog-post, .faq-item');
+            
+            cards.forEach(card => {
+                card.classList.add('hover-enabled');
+            });
+            
+            const howSteps = document.querySelectorAll('.how-step');
+            howSteps.forEach((step, index) => {
+                step.style.setProperty('--step-index', index);
+            });
+        });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('download-modal');
+            const modalBtns = document.querySelectorAll('.download-btn');
+            const closeBtn = document.querySelector('.modal-close');
+            const downloadOptions = document.querySelectorAll('.download-option');
+            const cursor = document.querySelector('.custom-cursor');
+            
+            modalBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    modal.style.display = 'block';
+                    setTimeout(() => {
+                        modal.classList.add('active');
+                    }, 10);
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            function closeModal() {
+                modal.classList.remove('active');
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                }, 500);
+                document.body.style.overflow = '';
+            }
+            
+            closeBtn.addEventListener('click', closeModal);
+            
+            window.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            downloadOptions.forEach(option => {
+                option.addEventListener('mouseenter', function() {
+                    this.querySelector('i').style.transition = 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                    this.querySelector('i').style.transform = 'scale(1.2)';
+                    if (cursor) cursor.classList.add('hover-card');
+                });
+                
+                option.addEventListener('mouseleave', function() {
+                    this.querySelector('i').style.transform = 'scale(1)';
+                    if (cursor) cursor.classList.remove('hover-card');
+                });
+                
+                option.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    this.classList.add('downloading');
+                    
+                    setTimeout(() => {
+                        this.classList.remove('downloading');
+                        console.log("Téléchargement de", this.querySelector('span').textContent);
+                    }, 1500);
+                });
+            });
+            
+            if (closeBtn && cursor) {
+                closeBtn.addEventListener('mouseenter', function() {
+                    cursor.classList.add('hover-button');
+                });
+                
+                closeBtn.addEventListener('mouseleave', function() {
+                    cursor.classList.remove('hover-button');
+                });
+            }
+        });
+    </script>
+    
+    <script src="./js/scroll-animations.js"></script>
 </body>
 </html>
